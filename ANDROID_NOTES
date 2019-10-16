@@ -1,0 +1,150 @@
+Android:
+=========
+The Android OS uses a priority queue to assist in managing activities running on the device. 
+
+1)Activity:
+2)Intent:
+3)Services:
+4)Broadcast Reciever:
+5)Content Provider: 
+a)The moment we install whatsapp , the data from the contacts application by a special Component content provider.
+b) if one application wants to share data to another application , it shares through Content Provider
+
+
+How Android system understand which layout is to be shown: Manifest.xml
+========================================================================
+Entry point (AndroidManifest.xml) -> Intent Filter(action= main) loads that specific activity
+-> Activity(calls on create) -> calls setContentView-> layout file in res folder(to inflate)
+
+List characterstics of activity:
+================================
+1)Actvity is always associated with UI
+2)No two UI have the same activity (most important)[one layout will be inflated by one activity only]
+3)Activity has its own life cycle - onCreate();
+a)it looks up for the laytout to be inflated
+
+Lift cycle of activity:
+=======================
+1)onCreate(): looks for layout to be inflated , instantiates and registers
+2)onStart() : calls onResume()
+4)onResume() , activity is shown on the screen
+5)Activity Running
+6)onPause() - another activity comes into the foreground
+7)onStop() - the activity is no longer visible 
+8)onDestroy() - the activity is finished
+9)Activity Shutdown
+
+What are intents
+=================
+facilitates communication b/w components in many ways
+a)start activity
+b)start a service
+c) deliver broadcast
+
+Implicit Intent: opens google.com (b/w 2 applications)
+Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+startActivity(webIntent);
+
+Explicit Intent: (in the same application)
+Opening another Activity in the same application 
+a)you mention the current Application context
+b) if you want to pass data from one activity to another activity in the same application
+then use the put extra Data
+Intent openNewActivity = new Intent(getApplicationContext(),Activity2.class);
+//Directly Set Data in Intent object
+openNewActivity.putExtra("Name","Dheemanth");
+openNewActivity.putExtra("UserName","xyz");
+openNewActivity.putExtra("isRegsitered",true);
+startActivity(openNewActivity);
+
+//in the activity2 class
+Intent intentObject = getIntent();
+String name = intentObject.getStringExtra("Name");
+String userName = intentObject.getStringExtra("userName");
+boolean isRegsitered = intentObject.getBooleanExtra("isRegsitered",true);
+Toast.makeText(getApplicationContext(), "Name " + name +
+                                        "UserName " + UserName + 
+                                        "Registration Status :" + isRegsitered);
+                                        
+
+
+Explain purpose and structure of Mainifest File:AndroidManifest.xml
+===================================================================
+Provides essential information about your APP to the Android system
+which the system must have before it can run any of the app's code
+<user-sdk>
+<user-permission>
+<application
+ <activity>
+   <intent-filter>
+     <action>
+             android:name= " android.intent.action.MAIN" />
+     <category>
+   </intent-filter>
+ <activity>
+   <intent-filter>
+     <action>
+     <category>
+   </intent-filter>
+ <service>
+ //mention the service here
+ </service>
+ <provider>
+ //content providers
+ </provider>
+ <receiver>
+ //mention the broadcast recievers here
+ </receiver>
+</application>
+
+What is Floating Action button ?
+==================================
+This button floats on UI in a circular shape
+widget.FloatingActionButton
+
+What is Toolbar/Snackbar/Toast:
+==================================
+SNackbar is just like a toast message except 
+they provide action to interact with
+you can swipe them and remove them.
+
+
+=====================================
+1)Have not worked on Layouts/Styles
+2)Tool bars/widgets
+3)Views
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
