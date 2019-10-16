@@ -1,4 +1,9 @@
 Android:
+Do this everytime:
+https://www.youtube.com/watch?v=QraiWQjUb9I
+https://www.youtube.com/watch?v=Hvve_tCZ5CA
+===========================================================================================
+
 Android Interview Questions 2017 from AcadGild
 https://www.youtube.com/playlist?list=PLlz0muypSBNb_Ym5HNpv96MB07YQp_0it
 Android Interview Questions And Answers :Best
@@ -59,7 +64,7 @@ onCreate - SetContentView
 StartService(new intent(this, MediaPlayerAUdio.class))
 StopService(new intent(this, MediaPlayerAUdio.class))
 
-DIfferent Types of Service:
+DIfferent Types of Service:(Scheduled service, started service, bound service allows client server interface, by calling bind/unbind method)
 1)handler Service -> Avoid AIDL, communicate without AIDL
 can deal with 1MB of data
 you can send multiple pictures
