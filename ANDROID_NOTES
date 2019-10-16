@@ -1,7 +1,158 @@
 Android:
 Android Interview Questions 2017 from AcadGild
 https://www.youtube.com/playlist?list=PLlz0muypSBNb_Ym5HNpv96MB07YQp_0it
-========================================================================
+Android Interview Questions And Answers :Best
+https://www.youtube.com/watch?v=zLCZDTluitM
+https://developer.android.com/guide/components/services
+https://developer.android.com/guide/components/aidl
+https://developer.android.com/reference/android/content/SharedPreferences
+https://www.quora.com/What-is-getBaseContext-method-in-Android
+============================================================================================
+Framework:https://developer.android.com/guide/platform
+
+============================================================================================
+AIDL: used for Interprocess communication
+Break down objects in primitives that are android understandable
+String
+list
+map
+Native java types
+============================================================================================
+ANR: Android not responding , use sepearate threads or move to services
+TOMBSTONE: crashes
+
+============================================================================================
+Core Building Blocks of Android?
+1)Activity - Has a Layout File
+2)Content Provider(share data b/w application) - acts as a framework on top SQLite
+Google can search data on your phone , as each application can pull the data out
+from content providers
+3)Service - runs in the background, even if activity is destroyed , it still works in background
+https://developer.android.com/guide/components/services
+AIDL: Android Interface Definition Lanaguage
+4)Broadcast recievers - it is called events or intents
+
+components
+Intents
+Binders
+
+5 different applications are using 5 different sandboxes
+content providers takes from one sandbox and shares with another sandbox
+============================================================================================
+Security:
+App specific permissions
+Device policies -cypher
+============================================================================================
+what are the different kinds of contexts in Android?
+depending on the situation and circumstances , it will be holding on to the address
+
+1)this(getActivity)
+2)getContext()
+3)getBaseContext()
+The method getBaseContext() can be used to access the “base” Context that the ContextWrapper wraps around. You might need to access the “base” context if you need to, for example, check whether it’s a Service, Activity or Application:
+4)getApplicationContext()
+============================================================================================
+Services: Example Google Maps
+AIDL is used to share data b/w 2 different sandboxes
+Main activity dies the service is still On
+onCreate - SetContentView
+StartService(new intent(this, MediaPlayerAUdio.class))
+StopService(new intent(this, MediaPlayerAUdio.class))
+
+DIfferent Types of Service:
+1)handler Service -> Avoid AIDL, communicate without AIDL
+can deal with 1MB of data
+you can send multiple pictures
+2) Intent Service ->more or less asynchronous calls
+download movie from the server , the service stops by itself
+3) service (AIDL)
+============================================================================================
+Difference b/w Service & Thread:
+1)A Thread is concurrent Unit of execution
+2)By default all components of the same application run in same process and thread(main thread)
+3)Handlers and Loopers are part of Android it is part of Messaging architecture 
+
+Service:
+A handler and intent can be used to communicate
+Service is part of activity and is not a seperate process
+Service is not killed when application is killed
+it exposes its functionality to other applications by called Context.bindService(). It is beautiful concept , it is property of kernel.
+============================================================================================
+
+Fragment:
+it is part of activity
+you can combine multiple fragments in a single activy which helps to display
+multiple screen and reuse a fragment in multiple activites
+============================================================================================
+Content providers?
+contacts are content providers , that can be used by any other application or the emulator
+1)access to a structured set of data
+2)encapsulate the data and provide mechanism for defining data security
+3)Content providers are used to share the data b/w different applications
+============================================================================================
+Does android support any other language than java?
+yes android app can be developed in c/c++ using NDK
+============================================================================================
+Library files are .so Files , shared object files
+Example Surface Manager 
+============================================================================================
+Android Kernel:
+ANdroid inturn works on Sandbox
+IPC's 
+Binders
+Power Management
+Audio Driver
+Display/Camera Driver
+Bluetooth/Wifi Driver
+============================================================================================
+Android Tools:
+Android Emulator
+ANdroid Debugging Bridge
+============================================================================================
+Folder Structure:
+App - It describes fundamental characterstics of APP
+java - src files
+res - resources
+Gradle Scripts- this is auto generated file which contains
+compileSdkVersion, buildToolVersion,applicationId, minSdkVersion
+targetSdkVersion, versionCode, versionName
+============================================================================================
+What is android RUn time?
+Android run time consists of Dalvik Virtual Machine and Core Java Libraries
+DVM is optimized for low processing power and low memory enviornments
+Unlike JVM , the DVM does not run .class files , instead it runs .dex files
+Recompile the modified code only , JIT is helpful here , is the just in time compiler 
+Short segments of bytecode into native machine code
+            
+java source code -> java byte code -> java VM
+             java compiler-------dex compiler   Davik executeable    
+Java source code-> Java Byte code -> Dalvik Byte Code -> Dalvik VM
+
+Dalvik is the name of ANdroid virtual machine
+it is an interpreter only virtual machine that executes files in the Dalvik executable(.dex) format
+==================================================================================================
+what is significance of the .dex files?
+android program are compiled to .dex files , which are zipped into a single .apk on the device.
+.dex files can be created by translating compiled applications written in java
+.dex is a format that is optimized for effective stoarage and memory mappable executions
+==================================================================================================
+what is toast?
+it is a pop up for short messages
+notifications automatically fade
+
+==================================================================================================
+Name some exceptionsin Android? Not worked much on Layout
+Inflate exception
+Surface.OutofResourceException - Dialog
+BadTokenException
+keyCharacterMap.UnavailableException
+============================================================================================
+Dialog:
+Alert Dialog
+Progess Dialog - spinner or a bar
+Date Picker Dialog
+Time picker Dialog
+============================================================================================
 The Android OS uses a priority queue to assist in managing activities running on the device. 
 
 1)Activity:
@@ -36,12 +187,14 @@ Lift cycle of activity:
 8)onDestroy() - the activity is finished
 9)Activity Shutdown
 
-What are intents
+What are intents : It is a messaging object you can use to request an action from another app component or facilitates communication b/w components. Intent happens to be the binder
 =================
-facilitates communication b/w components in many ways
-a)start activity
-b)start a service
-c) deliver broadcast
+The methods that are use to deliver intents to different components are
+a)start activity , context.startActivity(Intent)
+b)start a service , context.startService()
+c) deliver broadcast , context.sendBroadcast()
+
+"content providers is a component inturn uses the binder , but not related to Intents"
 
 Implicit Intent: opens google.com (b/w 2 applications)
 Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
@@ -137,7 +290,7 @@ External Storage(SD card)
 Content Providers
 Storing In Network Server
 
-SQLite:RDBMS SQLiteOpenHelperClass
+SQLite:RDBMS SQLiteOpenHelperClass : serverless(no server), transactional , self contained
 Light Weight Database which comes with Android Studio
 data bases like MYSQL are heavy
 Targetted for local storage
@@ -161,6 +314,9 @@ moveToLast()
 moveToNext()
 moveToPrevious()
 moveToPosition(int position)
+======================================================================================================
+SharedPreferences for persistence- Stores Private Primitive Data as Key/value Store
+
 ======================================================================================================
 What are WEBSERVICE?
 what are the common formats to exchange data?
@@ -221,5 +377,5 @@ For image Processing
 ===============================================================================================================
 1)Have not worked on Layouts/Styles
 2)Tool bars/widgets
-3)Views
-=====================================
+3)Views or WebViews(webview is part of java)
+================================================================================================================
