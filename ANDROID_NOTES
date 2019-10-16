@@ -1,5 +1,7 @@
 Android:
-=========
+Android Interview Questions 2017 from AcadGild
+https://www.youtube.com/playlist?list=PLlz0muypSBNb_Ym5HNpv96MB07YQp_0it
+========================================================================
 The Android OS uses a priority queue to assist in managing activities running on the device. 
 
 1)Activity:
@@ -108,43 +110,116 @@ SNackbar is just like a toast message except
 they provide action to interact with
 you can swipe them and remove them.
 
+======================================================================================================
+What will happen if execute() function of AsyncTask is called 
+more than once for a given AsyncTask object?
 
-=====================================
+Android App throws Run time exception
+
+======================================================================================================
+what are the mandatory functions to be implemented in AsyncTask?
+doInBackGround
+======================================================================================================
+Why android follows Single Threaded UI model ?
+Because it is cheaper in terms of CPU overheads.
+Any log running tasks , either you create Async tasks , Loaders , or Services in Android.
+======================================================================================================
+What are Loaders ?
+used to Load data from content providers or Cursors and other data sources to display it.
+Run on seperate thread
+Simplify Thread management
+Help in persisting and caching results.
+======================================================================================================
+What are the options to save data in Client Device?
+Shared preferences
+Internal Storage(SQLite)
+External Storage(SD card)
+Content Providers
+Storing In Network Server
+
+SQLite:RDBMS SQLiteOpenHelperClass
+Light Weight Database which comes with Android Studio
+data bases like MYSQL are heavy
+Targetted for local storage
+SQLiteOpenHelper Class:
+
+what are ContentValues?
+these are Key/values pair to store the values in a particular column
+If you are firing a select Query?
+A Record is returned by the cursor object which represents the row of the query result
+
+Which fields can we store in SQLite database ?
+Null
+Integer
+Real
+Text
+Blob
+
+The five methods that help you traverse over a cursor object
+moveToFirst()
+moveToLast()
+moveToNext()
+moveToPrevious()
+moveToPosition(int position)
+======================================================================================================
+What are WEBSERVICE?
+what are the common formats to exchange data?
+
+Web Service:
+============
+1)Application Component
+2)XML & JSON
+3)REST
+4)SOAP uses only XML called SOAP envelope
+
+GET - retreival of data
+POST - submitting data like form submissions
+DELETE - delete data
+HEAD
+PUT - update any information
+CONNECT
+OPTIONS
+
+How WebService is implemented in Android ?
+=========================================
+java.net package provides the API to access the internet
+Url and HttpURLConnection are the main classes to access internet
+
+URL url = new URL(link);
+HttpURLConnection is used to connect
+the input stream is obtained
+the most common use case is Buffered Reader
+
+doPost
+JSONObject jobj = new JSONObject(json);
+===============================================================================================================
+Write the code Fragment which check whether the Android Device
+is connected to the internet or not?
+
+get the connectivity Manager , get the SystemService Context
+get the network info from the connectivity Manager
+check if network info is available or not
+
+1)ConnectivityManager helps to checks if we are connected or not to the network
+2)AudioManager
+3)BluetoothManager
+
+===============================================================================================================
+What are the other ways of Networking in Android other than HttpClient?
+Volley: takes responsibility for opening and closing the databases, getting connected over the network. ALso provides caching mechanism
+
+OkHttp:these are Libraries
+For Efficient Http Access
+
+Retrofit:these are 3rd party Libraries
+it is a type safe HTTP Client for Android and Java For Rest Based client
+https://square.github.io/retrofit/
+
+Glide and Picasso:these are Libraries
+For image Processing
+
+===============================================================================================================
 1)Have not worked on Layouts/Styles
 2)Tool bars/widgets
 3)Views
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=====================================
