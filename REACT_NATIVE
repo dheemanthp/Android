@@ -3,7 +3,7 @@ https://www.youtube.com/watch?v=mkualZPRZCs
 ==================================================================
 Advantages of React Native:
 ==================================================================
-1)Native App development is easy now with java script and Java script library
+1)Native App development is easy now with java script and React library
 2)Cross platform
 3)Much less expensive
 4)Saves Massive Amount of time
@@ -17,6 +17,10 @@ Touchable Elements [highlight]
 TabBarIOS
 ToolbarAndroid
 
+==================================================================
+UI Components:
+==================================================================
+React Native , yarn
 
 
 
