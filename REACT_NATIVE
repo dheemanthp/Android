@@ -1,3 +1,52 @@
+
+React is a component based java script library used for building UI, and was created by Facebook.
+React Native is a javascript framework for writing real natively rendering mobile applications
+for ios and android.
+
+java/kotlin for android
+objective C/swift for IOS apps
+React Native allows native applications to suit both IOS and Android
+X code/Android studio->unless you use Expo(free and complete workflow for creating
+next gen apps for ios and android) 
+Build Cross platform native apps with ease
+Expo gives low level hooks , push notifications and mapping
+
+React.js is for web
+ReactNative does not DIV Tags
+Some of the components that works on IOS does not work on android
+Clearly not an 1.0 Framework.
+Learn once write everywhere , is not really true, is only true for the structure.
+Component Libraries.
+For CRUD apps then React Native is good.
+If there is more of animation/fluid 60 frame per second UI , then flutter is better.
+If it is games , then you want to use Native code and not cross platform tools.
+For android -> JAva/Kotlin/XML, super familiar with XCODE, gradle and build process
+For IOS -> objective C/swift , cocopods
+
+
+
+
+
+
+
+
+
+
+INTERVIEW QUESTIONS:
+====================
+
+VIrtual DOM ?
+JSX - XML/HTML structure ?
+What is state in React? props are inputs to components
+Differences b/w props and states
+What is Arrow Function in React JS?
+What are controlled components and uncontrolled components?
+Difference b/w functional and class components?
+what is pure component?
+
+
+===========================================================================================================
+
 https://www.youtube.com/watch?v=mkualZPRZCs
 https://medium.com/@madasamy/flux-vs-mvc-design-pattern-de134dfaa12b
 
