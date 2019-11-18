@@ -1,4 +1,14 @@
 
+React Native is a collection of Special Components , compiled to Native Code.
+Cannot use <DIV> Tags, but special Components like VIEW & TEXT can be used.
+<View>
+  <TEXT> </TEXT>
+</View>
+React Native will translate the View Tag to Android View. Basically acts as a wrapper.
+javascript code where we manage BUSINESS LOGIC will not be compied , but the VIEWs are always compiled.
+Gives access to Native Platform API's like Camera, Bluetooth etc.
+Connects Java script code & Native Platform Code.
+
 React is a component based java script library used for building UI, and was created by Facebook.
 React Native is a javascript framework for writing real natively rendering mobile applications
 for ios and android.
