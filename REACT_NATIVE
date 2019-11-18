@@ -2,6 +2,7 @@
 INSTALL EXPO
 sudo apt-get install npm
 npm install libxmljs2
+sudo npm install yarn
 sudo npm install expo-cli --global
 sudo npm install --unsafe-perm expo-cli
 ==================================================================================================
