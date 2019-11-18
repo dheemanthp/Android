@@ -2,7 +2,8 @@ Recommended Links:
 https://www.youtube.com/watch?v=qSRrxpdMpVc
 https://www.udemy.com/course/the-complete-react-native-and-redux-course/
 
-EXPO will abstract some of the complexities and control 
+EXPO CLI will abstract some of the complexities and control, 
+but React Native CLI will have the Bare Bone Development Setup and Full control.
 
 1) React Native is a collection of Special Components , compiled to Native Code.
 2)Cannot use <DIV> Tags, but special Components like VIEW & TEXT can be used.
