@@ -1,10 +1,17 @@
+
+INSTALL EXPO
+sudo apt-get install npm
+sudo npm install expo-cli --global
+sudo npm install --unsafe-perm expo-cli
+==================================================================================================
 Recommended Links:
 https://www.youtube.com/watch?v=qSRrxpdMpVc
 https://www.udemy.com/course/the-complete-react-native-and-redux-course/
-
-EXPO CLI will abstract some of the complexities and control, 
-but React Native CLI will have the Bare Bone Development Setup and Full control and fine grained configuration.
-
+==================================================================================================
+EXPO CLI : will abstract some of the complexities and control, and simple to use
+React Native CLI : will have the Bare Bone Development Setup and Full control and fine grained configuration.
+We can always move from EXPO work flow to Native Work Flow by calling "Eject".
+==================================================================================================
 1) React Native is a collection of Special Components , compiled to Native Code.
 2)Cannot use <DIV> Tags, but special Components like VIEW & TEXT can be used.
 <View>
@@ -14,11 +21,11 @@ but React Native CLI will have the Bare Bone Development Setup and Full control 
 4)javascript code where we manage BUSINESS LOGIC will not be compied , but the VIEWs are always compiled.
 5)Gives access to Native Platform API's like Camera, Bluetooth etc.
 6) Connects Java script code & Native Platform Code.
-
+==================================================================================================
 React is a component based java script library used for building UI, and was created by Facebook.
 React Native is a javascript framework for writing real natively rendering mobile applications
 for ios and android.
-
+==================================================================================================
 java/kotlin for android
 objective C/swift for IOS apps
 React Native allows native applications to suit both IOS and Android
