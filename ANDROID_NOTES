@@ -65,6 +65,17 @@ StartService(new intent(this, MediaPlayerAUdio.class))
 StopService(new intent(this, MediaPlayerAUdio.class))
 
 DIfferent Types of Service:(Scheduled service, started service, bound service allows client server interface, by calling bind/unbind method)
+1)Services operate on the Main thread , or the thread it is instantiated on.
+2)Which types of services to use
+BOUND vs started service.
+A started service is only started by only explicitly call Start Service or Start Foreground service.
+A Bound service is started , when an other component Binds to it , or when you explicitly call Start Service
+or Start Foreground service.
+
+
+
+
+
 1)handler Service -> Avoid AIDL, communicate without AIDL
 can deal with 1MB of data
 you can send multiple pictures
