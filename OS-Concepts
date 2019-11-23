@@ -1,5 +1,6 @@
 =========================================================================================================
 Best link https://www.tutorialspoint.com/operating_system/os_virtual_memory.htm
+TLB(translation look aside buffer): https://en.wikipedia.org/wiki/Translation_lookaside_buffer
 Virtual Memory:Paging
 Virtual memory breaks programs into fixed-size blocks called pages.
 If a computer has abundant physical memory, the operating system loads all of a program's pages into RAM.
