@@ -1,0 +1,9 @@
+Virtual Memory:
+CPU : process a given program
+Physical or Main memory or RAM are one and the same . they have a limited storage.
+Only pages that are really needed are loaded on to the physical memory , and rest are in the secondary memory(backup storage).
+every program only knows the logical address.
+logical address is translated into physical address by MMU.
+if the page is not found in page table then it is loaded on to the Physcial memory by the operating system.
+
+https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/9_VirtualMemory.html
