@@ -1,4 +1,21 @@
-Virtual Memory:
+=========================================================================================================
+Best link https://www.tutorialspoint.com/operating_system/os_virtual_memory.htm
+Virtual Memory:Paging
+Virtual memory breaks programs into fixed-size blocks called pages.
+If a computer has abundant physical memory, the operating system loads all of a program's pages into RAM.
+If not, the OS fits as much as it can and runs the instructions in those pages.
+When the computer is done with those pages, it loads the rest of the program into RAM,
+possibly overwriting earlier pages. Because the operating system automatically manages these details,
+this frees the software developer to concentrate on program features and not worry about memory issues.
+Multiprogramming
+Virtual memory with paging lets a computer run many programs at the same time, almost regardless of available RAM. This benefit, called multiprogramming, is a key feature of modern PC operating systems, as they accommodate many utility programs such as printer drivers, network managers and virus scanners at the same time as your applications -- Web browsers, word processors, email and media players.
+
+Paging File
+With virtual memory, the computer writes program pages that have not been recently used to an area on the hard drive called a paging file. The file saves the data contained in the pages; if the program needs it again, the operating system reloads it when RAM becomes available. When many programs compete for RAM, the act of swapping pages to the file can slow a computer's processing speed, as it spends more time doing memory management chores and less time getting useful work done. Ideally, a computer will have enough RAM to handle the demands of many programs, minimizing the time the computer spends managing its pages.
+
+Memory Protection
+A computer without virtual memory can still run many programs at the same time, although one program might change, accidentally or deliberately, the data in another if its addresses point to the wrong program. Virtual memory prevents this situation because a program never "sees" its physical addresses. The virtual memory manager protects the data in one program from changes by another.
+
 CPU : process a given program
 Physical or Main memory or RAM are one and the same . they have a limited storage.
 Only pages that are really needed are loaded on to the physical memory , and rest are in the secondary memory(backup storage).
@@ -7,3 +24,6 @@ logical address is translated into physical address by MMU.
 if the page is not found in page table then it is loaded on to the Physcial memory by the operating system.
 
 https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/9_VirtualMemory.html
+https://chortle.ccsu.edu/java5/Notes/chap01/ch01_6.html
+https://smallbusiness.chron.com/concept-virtual-memory-computer-architecture-65904.html
+=========================================================================================================
