@@ -26,7 +26,7 @@ Translation Lookaside Buffer-
 Translation Lookaside Buffer (TLB) is a solution that tries to reduce the effective access time.
 Being a hardware, the access time of TLB is very less as compared to the main memory.
 
-
+s
 The TLB is a cache that holds (likely) recently used pages. The principles of locality and temporality (sp) say that the pages referenced in the TLB are likely to be used again soon. This is the underlying idea for all caching. When these pages are needed again, it takes minimal time to find the address of the page in the TLB. The page table itself can be enormous, so walking it to find the address of the needed page can get very expensive.
 
 
