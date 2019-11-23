@@ -5,6 +5,7 @@ https://en.wikipedia.org/wiki/Translation_lookaside_buffer
 https://stackoverflow.com/questions/36708186/tlb-vs-page-table
 Best link :https://www.gatevidyalay.com/translation-lookaside-buffer-tlb-paging/]
 https://en.wikipedia.org/wiki/Page_table
+https://stackoverflow.com/questions/24322135/how-page-tables-are-stored-in-the-main-memory
 
 The CPU's memory management unit (MMU) stores a cache of recently used mappings from the operating system's page table. This is called the translation lookaside buffer (TLB), which is an associative cache.[3]
 
