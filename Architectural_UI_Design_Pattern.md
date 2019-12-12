@@ -1,7 +1,4 @@
-@settings {
-  font-size: 8;
-}
-
+```
 Architectural UI Design Pattern :
 Learn all the semantics , rule , vocabulary
 
@@ -51,7 +48,7 @@ Tests: Follow Pyramid
 Maximum unit Tests
 then Integrated Tests , Happy Path
 then UI tests
-
+```
 
 
 
