@@ -1,4 +1,23 @@
 Architectural UI Design Pattern
-
+=======================================
 MVC : Model view Controller
-MVVM: Model View View Model
+=======================================
+here controller references the view
+here controller references the model
+
+
+=======================================
+MVVM: Model View (View Model or Binder) , hence controller is replaced with (view model).
+=======================================
+MVVM was created by Microsoft , to remove all the boiler plate code of Controller.
+here view references (View Model)
+or there is a concept of binder , hence MVVM is also called Model View Binder.
+XAML - is a Binder
+
+(View Model) should be platform agnostic.
+Example : A Date object part of a model , is rendered as a presentable string in the View.
+All the formatting logic stays in the (View Model)
+
+=======================================
+MVP : Model View Presenter
+=======================================
