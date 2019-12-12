@@ -38,12 +38,12 @@ Presenter should not refererence the UI view object directly but should referenc
 If you compare it to MVC , then Basically it is an abstraction b/w the Model and Controller.
 UI implements the presenter.
 You can acheieve the same level of Abstraction with other architecture.
-================================================================================================================
+===================================================================================================
 Least Reusable rankings:
 MVC -
 MVVM -
 MVP -
-================================================================================================================
+===================================================================================================
 Tests: Follow Pyramid
 Maximum unit Tests
 then Integrated Tests , Happy Path
