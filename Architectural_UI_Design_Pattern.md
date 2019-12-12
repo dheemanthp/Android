@@ -1,5 +1,5 @@
 ```
-**Architectural UI Design Pattern : **
+**Architectural UI Design Pattern :**
 Learn all the semantics , rule , vocabulary
 
 The goal is not to have a pattern , but gol is to have a Flexible , testable , maintainable , 
