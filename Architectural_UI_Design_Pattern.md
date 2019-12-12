@@ -24,6 +24,7 @@ Break the view Controller into Tiny MVC's.
 
 **##2]MVVM: Model(can have behaviour and data) View(can have behaviour and data)  &  View-Model or Binder , 
 hence controller is replaced with (view-model).**
+Requires Binding
 Before 2014 , there was no MVVM in the market.
 
 MVVM was created by Microsoft , to remove all the boiler plate code of Controller.
