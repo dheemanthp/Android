@@ -1,3 +1,8 @@
+```
+https://www.youtube.com/watch?v=blJlYntpOjE
+https://www.youtube.com/watch?v=cbqMkIG6Qeg
+```
+
 **#Architectural UI Design Pattern**
 
 Learn all the semantics , rule , vocabulary
