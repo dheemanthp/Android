@@ -1,9 +1,15 @@
+@settings {
+  font-size: 8;
+}
+
 Architectural UI Design Pattern :
 Learn all the semantics , rule , vocabulary
 
 The goal is not to have a pattern , but gol is to have a Flexible , testable , maintainable , 
 extendible , reusable architecture. The pattern is only a tool.
 We can create a corelation to acheive the goal.
+
+
 You can have variations of each of the Models
 ==============================================================================
 1]MVC : Model(data) view(data) Controller : the Controller and view are tightly coupled 
