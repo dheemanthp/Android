@@ -41,6 +41,12 @@ MVC -
 MVVM -
 MVP -
 ================================================================================================================
+Tests: Follow Pyramid
+Maximum unit Tests
+then Integrated Tests , Happy Path
+then UI tests
+
+
 
 
 
