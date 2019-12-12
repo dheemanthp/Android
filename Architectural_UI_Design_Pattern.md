@@ -1,6 +1,7 @@
 ```
 https://www.youtube.com/watch?v=blJlYntpOjE
 https://www.youtube.com/watch?v=cbqMkIG6Qeg
+https://www.youtube.com/watch?v=sWx8TtRBOfk -> partial
 ```
 
 **#Architectural UI Design Pattern**
