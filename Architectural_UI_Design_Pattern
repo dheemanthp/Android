@@ -1,16 +1,23 @@
-Architectural UI Design Pattern
-=======================================
-MVC : Model view Controller
-=======================================
+Architectural UI Design Pattern :
+
+The goal is not to have a pattern , but gol is to have a Flexible , testable , maintainable , 
+extendible , reusable architecture. The pattern is only a tool.
+We can create a corelation to acheive the goal.
+You can have variations of each of the Models
+==============================================================================
+1]MVC : Model view Controller : the Controller and view are tightly coupled 
+==============================================================================
 here controller references the view
 here controller references the model
+By creating an abstraction we can make it MVP
 
-
-=======================================
-MVVM: Model View (View Model or Binder) , hence controller is replaced with (view model).
-=======================================
+Break the view Controller into Tiny MVC's.
+==============================================================================
+2]MVVM: Model(can have behaviour and data) View(can have behaviour and data)  &  View-Model or Binder , 
+hence controller is replaced with (view-model).
+==============================================================================
 MVVM was created by Microsoft , to remove all the boiler plate code of Controller.
-here view references (View Model)
+here view references (View-Model)
 or there is a concept of binder , hence MVVM is also called Model View Binder.
 XAML - is a Binder
 
@@ -18,6 +25,20 @@ XAML - is a Binder
 Example : A Date object part of a model , is rendered as a presentable string in the View.
 All the formatting logic stays in the (View Model)
 
-=======================================
-MVP : Model View Presenter
-=======================================
+==============================================================================
+3]MVP : Model(data) View(data) Presenter , this is more reusable as it has more abstraction.
+==============================================================================
+Presenter is again the mediator here.
+Presenter should not refererence the UI view object directly but should reference the abstraction.
+If you compare it to MVC , then Basically it is an abstraction b/w the Model and Controller.
+UI implements the presenter.
+You can acheieve the same level of Abstraction with other architecture.
+================================================================================================================
+Least Reusable rankings:
+MVC -
+MVVM -
+MVP -
+================================================================================================================
+
+
+
