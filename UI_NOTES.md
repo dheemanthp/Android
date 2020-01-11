@@ -1,3 +1,3 @@
 
-Larger Display, Richer and Immersive experience.
-Focused and Handy experience.
+Larger Display, Richer , detailed and Immersive experience.
+Optimized for quick and easy action , focused and Handy experience.
