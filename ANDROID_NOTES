@@ -1,7 +1,7 @@
 
 Explicit Intent vs Implicit Intent:
 Transfer b/w activities/screens within the same application , try to use explicit Intents.
-An other application which can handle an intent triggered by you , use implicit intents.
+An other application which can handle an intent triggered by you , use implicit intents.It will use intent resolution here.
 
 
 
