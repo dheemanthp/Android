@@ -1,3 +1,10 @@
+
+Explicit Intent vs Implicit Intent:
+Transfer b/w activities/screens within the same application , try to use explicit Intents.
+An other application which can handle an intent triggered by you , use implicit intents.
+
+
+
 Android:https://github.com/derekargueta/Android-Interview-Questions
 Do this everytime:
 https://www.youtube.com/watch?v=QraiWQjUb9I
