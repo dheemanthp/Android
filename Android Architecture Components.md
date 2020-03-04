@@ -9,4 +9,5 @@ Your users don't lose data if the Android OS destroys your app to free up resour
 Your app continues to work in cases when a network connection is flaky or not available.
 By basing your app on model classes with the well-defined responsibility of managing the data, your app is more testable and consistent.
 
-
+Assigning excessive responsibility to the UI controllers in this way also makes testing a lot harder.
+It's easier and more efficient to separate out view data ownership from UI controller logic.
