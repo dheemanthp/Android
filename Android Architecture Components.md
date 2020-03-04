@@ -11,3 +11,7 @@ By basing your app on model classes with the well-defined responsibility of mana
 
 Assigning excessive responsibility to the UI controllers in this way also makes testing a lot harder.
 It's easier and more efficient to separate out view data ownership from UI controller logic.
+
+
+Implement a ViewModel
+Architecture Components provides ViewModel helper class for the UI controller that is responsible for preparing data for the UI. ViewModel objects are automatically retained during configuration changes so that data they hold is immediately available to the next activity or fragment instance. For example, if you need to display a list of users in your app, make sure to assign responsibility to acquire and keep the list of users to a ViewModel, instead of an activity or fragment, as illustrated by the following sample code:
