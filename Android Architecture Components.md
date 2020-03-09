@@ -24,7 +24,14 @@ In the past we would have callbacks but not any more.
 
 
 
-Room Library : Easier SQLite persistence , robust SQL object mapping library.
+Room Library : Easier SQLite persistence 
+1)robust SQL object mapping library.
+2)Maps database Rows to objects
+3)No content values or cursors
+4)Compile Time validation of SQL queries
+5)Support for Observation , Live Data and RxJava
+
+
 LifeCycle Library(LiveData): Easier LifeCycle Management , Hold all of the data needed for UI) 
 Paging Library : Easier LAZY Loading of Large Data sets
 
