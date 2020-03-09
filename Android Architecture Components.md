@@ -48,15 +48,6 @@ can be Database , another source can be network.
 3)It is good to make this also a singleton, and then use dependecy injection to get it inside of the viewmodel.
 4)Using dependency injection would mean it is easy to mock the repository , and hence easy to test viewModel[ KEY POINT].
 
-
-
-LifeCycle Library class called LiveData: 
-1)Easier LifeCycle Management , Hold all of the data needed for UI) 
-2)Helps to keep the UI updated and in sync with the database
-3)Adding the LiveData Class in Dao class , would mean , that it will automatically send the updates if things changes.
-4)LifeCycleObserver - Interface for observing a lifecycle owner.
-Enable listeners/services to deal with their own life cycles.
-
 ViewModel: ****they survive configuration change but dont survice activity being finished(back button)/App being killed***
 **they are not a permanent thing that stays for ever
 ** they are not a replacement for persistence or OnSavedInstanceState
@@ -75,9 +66,20 @@ Android framework is smart it will try to save some UI data for us using onSaved
 Now by giving responsibility to viewModel , activity need not worry about saving Data.
 Recreated Activity has to just establish connection with ViewModel and will get all the Data the activity needs.
 
+
 Activity/Fragment : ****they do not survive configuration change***
 
-
+LifeCycle Library class called LiveData: 
+1)It is lifecycle aware of the actvitity/fragment class
+2)it only notifies observers with they are in STARTED/RESUMED state.
+3)Easier LifeCycle Management , Hold all of the data needed for UI) 
+4)Helps to keep the UI updated and in sync with the database
+5)Adding the LiveData Class in Dao class , would mean , that it will automatically send the updates if things changes.
+6)LifeCycleObserver - Interface for observing a lifecycle owner.
+Enable listeners/services to deal with their own life cycles.
+7)If activity is destroyed 
+8) Reactive UI , Life Cycle aware , and cleans itself of observers, allows database to communicate with UI without knowing
+about it.
 
 
 Paging Library : Easier LAZY Loading of Large Data sets
