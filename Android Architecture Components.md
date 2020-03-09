@@ -1,4 +1,28 @@
+Followed : To build the APP
+https://www.youtube.com/watch?v=BofWWZE1wts
+https://developer.android.com/jetpack/docs/guide
 
+Guide to app architecture : 
+1) Building robust, production-quality apps
+2) apps need to adapt to different kinds of user-driven workflows and tasks.
+3) app-hopping behavior is common on mobile devices, so your app must handle these flows correctly.
+
+
+
+Room Library : Easier SQLite persistence
+LifeCycle Library: Easier LifeCycle Management
+Paging Library : Easier LAZY Loading of Large Data sets
+
+A typical Android app contains multiple app components
+including activities
+fragments
+services
+content providers
+and broadcast receivers.
+
+
+
+=====================================================================================
 Separation of concerns : 
 The most important principle to follow is separation of concerns. It's a common mistake to write all your code in an Activity or a Fragment. These UI-based classes should only contain logic that handles UI and operating system interactions. By keeping these classes as lean as possible, you can avoid many lifecycle-related problems.
 
