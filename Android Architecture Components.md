@@ -2,16 +2,28 @@ Followed : To build the APP
 https://www.youtube.com/watch?v=BofWWZE1wts
 https://developer.android.com/jetpack/docs/guide
 
+    Activity/Fragment [Display user Data , and captures Users Events and OS events ]
+    ||
+    ViewModel LiveData [Holds All of the Data Needed for the UI ]
+    ||
+    Repository [ This is a Best practice with Clean API , Hides Complexity of Managing Different Data sources ]
+    ||
+    Room [Consists bunch of different classes (Entity, DAO,database class) Manages Local Data using SQLite data source using objects]
+    
+
+
+
 Guide to app architecture : 
 1) Building robust, production-quality apps
 2) apps need to adapt to different kinds of user-driven workflows and tasks.
 3) app-hopping behavior is common on mobile devices, so your app must handle these flows correctly.
 4)Sepearation of responsiblity for each of the classes.
+5)Strict Rule of Classes only have references to classes directly below them, makes it more testable , and easy to make layered changes without modifying other layers.
 
 
 
 Room Library : Easier SQLite persistence
-LifeCycle Library: Easier LifeCycle Management
+LifeCycle Library(LiveData): Easier LifeCycle Management , Hold all of the data needed for UI) 
 Paging Library : Easier LAZY Loading of Large Data sets
 
 A typical Android app contains multiple app components
