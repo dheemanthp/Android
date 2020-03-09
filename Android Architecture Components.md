@@ -41,12 +41,41 @@ need a single instance of a database.
 7) Can pass in a model or return a model , as long as their fields match fields in the data base
 8) Room has created an ExecutorService with a fixed thread pool that you will use to run database operations asynchronously on a background thread.
 
+[ BEST PRACTICE & NOT PART OF ANY LIBRARY] Repository class:handles Data Operations
+1)Provides clean API for rest of the app , for app data 
+2) In a complicated scenario , it can act as a mediator between different Data sources , for example sources
+can be Database , another source can be network.
+3)It is good to make this also a singleton, and then use dependecy injection to get it inside of the viewmodel.
+4)Using dependency injection would mean it is easy to mock the repository , and hence easy to test viewModel[ KEY POINT].
+
+
 
 LifeCycle Library class called LiveData: 
 1)Easier LifeCycle Management , Hold all of the data needed for UI) 
 2)Helps to keep the UI updated and in sync with the database
 3)Adding the LiveData Class in Dao class , would mean , that it will automatically send the updates if things changes.
+4)LifeCycleObserver - Interface for observing a lifecycle owner.
+Enable listeners/services to deal with their own life cycles.
 
+ViewModel: ****they survive configuration change but dont survice activity being finished(back button)/App being killed***
+**they are not a permanent thing that stays for ever
+** they are not a replacement for persistence or OnSavedInstanceState
+OnSavedInstanceState can survive total App destruction , but viewModel cannot survive total App destruction**
+Read This : https://medium.com/androiddevelopers/viewmodels-persistence-onsaveinstancestate-restoring-ui-state-and-loaders-fc7cc4a6c090
+
+1)these are objects that provide data for UI components and survive config changes.
+2) they survive configuration change
+3) Can replace AsyncTaskLoaders
+4)Strict No Bloated Activity Class , but rather focus on seperation of responsibility
+so activity/fragment should focus on displaying data
+where as ViewModel should focus on Holding UI Data
+For example : user rotates the phone , the configuration changes , 
+and hence activity instance is destroyed and recreated.
+Android framework is smart it will try to save some UI data for us using onSavedInstanceState in a Bundle.
+Now by giving responsibility to viewModel , activity need not worry about saving Data.
+Recreated Activity has to just establish connection with ViewModel and will get all the Data the activity needs.
+
+Activity/Fragment : ****they do not survive configuration change***
 
 
 
