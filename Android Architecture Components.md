@@ -24,7 +24,7 @@ In the past we would have callbacks but not any more.
 
 
 
-Room Library : Easier SQLite persistence
+Room Library : Easier SQLite persistence , robust SQL object mapping library.
 LifeCycle Library(LiveData): Easier LifeCycle Management , Hold all of the data needed for UI) 
 Paging Library : Easier LAZY Loading of Large Data sets
 
