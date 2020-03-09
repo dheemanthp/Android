@@ -19,6 +19,8 @@ Guide to app architecture :
 3) app-hopping behavior is common on mobile devices, so your app must handle these flows correctly.
 4)Sepearation of responsiblity for each of the classes.
 5)Strict Rule of Classes only have references to classes directly below them, makes it more testable , and easy to make layered changes without modifying other layers.
+6)Data changes are sent "back up to views" using LiveData and Observation.(Basically using observer pattern).
+In the past we would have callbacks but not any more.
 
 
 
