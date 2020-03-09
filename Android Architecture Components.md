@@ -37,8 +37,8 @@ Room Library : Easier SQLite persistence
 @Dao - Data base Access object for read/write operations
 @Database - Access to a database , must be an abstract class extending Room Database , also singleton as you only
 need a single instance of a database.
-
 7) Can pass in a model or return a model , as long as their fields match fields in the data base
+8) Room has created an ExecutorService with a fixed thread pool that you will use to run database operations asynchronously on a background thread.
 
 LifeCycle Library class called LiveData: 
 1)Easier LifeCycle Management , Hold all of the data needed for UI) 
