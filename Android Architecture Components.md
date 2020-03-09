@@ -6,6 +6,7 @@ Guide to app architecture :
 1) Building robust, production-quality apps
 2) apps need to adapt to different kinds of user-driven workflows and tasks.
 3) app-hopping behavior is common on mobile devices, so your app must handle these flows correctly.
+4)Sepearation of responsiblity for each of the classes.
 
 
 
