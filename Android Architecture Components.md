@@ -1,6 +1,8 @@
 Followed : To build the APP
 https://www.youtube.com/watch?v=BofWWZE1wts
 https://developer.android.com/jetpack/docs/guide
+CODE LAB: https://codelabs.developers.google.com/codelabs/android-room-with-a-view/#0
+
 
     Activity/Fragment [Display user Data , and captures Users Events and OS events ]
     ||
@@ -28,11 +30,25 @@ Room Library : Easier SQLite persistence
 1)robust SQL object mapping library.
 2)Maps database Rows to objects
 3)No content values or cursors
-4)Compile Time validation of SQL queries
+4)Compile Time validation of SQL queries , throws error
 5)Support for Observation , Live Data and RxJava
+6)Has Annotations which generates API to access the Database like 
+@Entity - defines schema of a database table 
+@Dao - Data base Access object for read/write operations
+@Database - Access to a database , must be an abstract class extending Room Database , also singleton as you only
+need a single instance of a database.
+
+7) Can pass in a model or return a model , as long as their fields match fields in the data base
+
+LifeCycle Library class called LiveData: 
+1)Easier LifeCycle Management , Hold all of the data needed for UI) 
+2)Helps to keep the UI updated and in sync with the database
+3)Adding the LiveData Class in Dao class , would mean , that it will automatically send the updates if things changes.
 
 
-LifeCycle Library(LiveData): Easier LifeCycle Management , Hold all of the data needed for UI) 
+
+
+
 Paging Library : Easier LAZY Loading of Large Data sets
 
 A typical Android app contains multiple app components
