@@ -12,3 +12,6 @@ as the base layout in your UI. ConstraintLayout allows you to specify the positi
 
 
 Avoid hard-coded layout sizes
+To ensure that your layout is flexible and adapts to different screen sizes, you should use "wrap_content" and "match_parent" for the width and height of most view components, instead of hard-coded sizes.
+***"wrap_content" tells the view to set its size to whatever is necessary to fit the content within that view.
+***"match_parent" makes the view expand to as much as possible within the parent view.
