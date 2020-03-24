@@ -5,7 +5,7 @@ Youtube Video : https://www.youtube.com/watch?v=5qlIPTDE274&t=30s
 
 1) " IT IS A HELPER CLASS " 
 2) Is responsible for preparing data for the UI Controller.
-3) VIEW MODEL + LIVE DATA = REACTIVE UI , which means UI is updated as and when there are changes in data
+3) VIEW MODEL + LIVE DATA + DATA BINDING = REACTIVE UI , which means UI is updated as and when there are changes in data
 4) Can Survive Configuration Changes , ViewModel objects are automatically retained during configuration changes so that data they hold is immediately available to the next activity or fragment instance.
 5)Responsibility to acquire and keep the list of users to a ViewModel
 6)If the activity is re-created, it receives the same MyViewModel instance that was created by the first activity.
