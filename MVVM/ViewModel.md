@@ -5,12 +5,13 @@ Youtube Video : https://www.youtube.com/watch?v=5qlIPTDE274&t=30s
 
 1) " IT IS A HELPER CLASS " 
 2) Is responsible for preparing data for the UI Controller.
-3) Can Survive Configuration Changes , ViewModel objects are automatically retained during configuration changes so that data they hold is immediately available to the next activity or fragment instance.
-4)Responsibility to acquire and keep the list of users to a ViewModel
-5)If the activity is re-created, it receives the same MyViewModel instance that was created by the first activity.
-6) VIEW MODEL CAN CONTAIN LIVEDATA OBJECTS , BUT SHOULD NEVER OBSERVE LIVEDATA OBJECTS. OBESERVING LIVE DATA OBJECTS IS
+3) VIEW MODEL + LIVE DATA = REACTIVE UI , which means UI is updated as and when there are changes in data
+4) Can Survive Configuration Changes , ViewModel objects are automatically retained during configuration changes so that data they hold is immediately available to the next activity or fragment instance.
+5)Responsibility to acquire and keep the list of users to a ViewModel
+6)If the activity is re-created, it receives the same MyViewModel instance that was created by the first activity.
+7) VIEW MODEL CAN CONTAIN LIVEDATA OBJECTS , BUT SHOULD NEVER OBSERVE LIVEDATA OBJECTS. OBESERVING LIVE DATA OBJECTS IS
 RESPONSIBLITY OF UI CONTROLLER.
-7)The purpose of ViewModel is to encapsulate the data for a UI controller to let the data survive configuration changes. 
+8)The purpose of ViewModel is to encapsulate the data for a UI controller to let the data survive configuration changes. 
 For information about how to load, persist, and manage data across configuration changes, see Saving UI States.
 https://developer.android.com/topic/libraries/architecture/saving-states
 
