@@ -4,8 +4,14 @@ Youtube Video : https://www.youtube.com/watch?v=5qlIPTDE274&t=30s
 ***BEST PRACTICES    ***WARNINGS***
 1) NEVER STORE CONTEXTS IN VIEWMODEL , this means no passing fragments , activities or views . The reason being
 VIEWMODEL CAN OUTLIVE Activity , fragment , and views.
-2) A VIEWMODEL HOLDING a REFERENCE TO ACTIVITY , FRAGMENT will cause memory leak when you rotate the screen. 
+A VIEWMODEL HOLDING a REFERENCE TO ACTIVITY , FRAGMENT will cause ***memory leak when you rotate the screen.***
+IF you need an application context to use , then use the "AndroidViewModel" class which is a subclass of ViewModel Class
+with an application Context.
 
+2) VIEWMODEL SHOULD BE USED ***IN ADDITION*** TO ONSAVEDINSTANCE STATE.
+VIEWMODEL CAN STORE LARGE AMOUNT OF DATA where as ONSAVEDINSTANCE STATE CAN STORE SMALLEST AMOUNT OF DATA.
+VIEWMODEL AND ONSAVEDINSTANCE STATE CAN SURVIVE CONFIGURATION CHANGES WHEN SCREEN IS ROTATED.
+VIEWMODEL CANNOT SURVIVE PROCESS DEATH , where as ONSAVEDINSTANCE STATE BUNDLE CAN SURVIVE PROCESS DEATH.
 
 
 ***FUNDAMENTAL***
