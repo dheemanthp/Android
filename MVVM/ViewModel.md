@@ -1,4 +1,5 @@
 //https://developer.android.com/topic/libraries/architecture/viewmodel#lifecycle
+Youtube Video : https://www.youtube.com/watch?v=5qlIPTDE274&t=30s
 
 ***FUNDAMENTAL***
 
