@@ -14,3 +14,5 @@ RESPONSIBLITY OF UI CONTROLLER.
 https://developer.android.com/topic/libraries/architecture/viewmodel#lifecycle
 
 If the activity is re-created, it receives the same MyViewModel instance that was created by the first activity. When the owner activity(destory) or Fragment(detach) is finished, ***the framework calls the ViewModel objects's onCleared() method so that it can clean up*** resources.
+
+***Share data between fragments***
