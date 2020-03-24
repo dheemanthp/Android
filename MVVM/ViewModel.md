@@ -1,6 +1,13 @@
 //https://developer.android.com/topic/libraries/architecture/viewmodel#lifecycle
 Youtube Video : https://www.youtube.com/watch?v=5qlIPTDE274&t=30s
 
+***BEST PRACTICES    ***WARNINGS***
+1) NEVER STORE CONTEXTS IN VIEWMODEL , this means no passing fragments , activities or views . The reason being
+VIEWMODEL CAN OUTLIVE Activity , fragment , and views.
+2) A VIEWMODEL HOLDING a REFERENCE TO ACTIVITY , FRAGMENT will cause memory leak when you rotate the screen. 
+
+
+
 ***FUNDAMENTAL***
 
 1) " IT IS A HELPER CLASS " 
