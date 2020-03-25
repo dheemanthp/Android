@@ -5,11 +5,6 @@ Binding the gap between code and XML
 Example:
 If you put tag like "layout" in XML file, you will get a ***Binding Class ProfileBinding***
 
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-
 ```
 <!-- profile.xml -->
 <layout>
