@@ -1,4 +1,4 @@
-#Declarative UI's Inside XML
+# Declarative UI's Inside XML
 
 Binding the gap between code and XML
 
@@ -10,17 +10,17 @@ As Kanye West said:
 > We're living the future so
 > the present is our past.
 
-
->   <!-- profile.xml -->
->   <layout>
->   <LinearLayout>
->   If you add variables to this layout , then setters and getters are generated in the Binding Class
->     <data>
->      <variable>
->      name = "user"
->      type = ".user"
->      </variable>
->     </data>
-> </LinearLayout>
-> </layout>'
-
+'''
+<!-- profile.xml -->
+<layout>
+<LinearLayout>
+If you add variables to this layout , then setters and getters are generated in the Binding Class
+  <data>
+    <variable>
+      name = "user"
+      type = ".user"
+    </variable>
+  </data>
+</LinearLayout>
+</layout>'
+'''
