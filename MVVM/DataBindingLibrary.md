@@ -1,4 +1,5 @@
 Declarative UI's Inside XML
+
 Binding the gap between code and XML
 
 Example:
