@@ -5,6 +5,7 @@ Binding the gap between code and XML
 Example:
 If you put tag like "layout" in XML file, you will get a ***Binding Class ProfileBinding***
 
+---
 <!-- profile.xml -->
 <layout>
 <LinearLayout>
@@ -17,4 +18,4 @@ If you put tag like "layout" in XML file, you will get a ***Binding Class Profil
      </data>***
 </LinearLayout>
 </layout>
-
+---
