@@ -7,7 +7,7 @@ If you put tag like "layout" in XML file, you will get a ***Binding Class Profil
 
 ---
 <!-- profile.xml -->
-<layout>
+'<layout>
 <LinearLayout>
 //If add variables to this layout , then setters and getters are generated in the Binding Class
   ***<data>
@@ -17,5 +17,5 @@ If you put tag like "layout" in XML file, you will get a ***Binding Class Profil
       </variable>
      </data>***
 </LinearLayout>
-</layout>
+</layout>'
 ---
