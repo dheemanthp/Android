@@ -6,16 +6,16 @@ Example:
 If you put tag like "layout" in XML file, you will get a ***Binding Class ProfileBinding***
 
 ---
-<!-- profile.xml -->
+> <!-- profile.xml -->
 > <layout>
 > <LinearLayout>
-//If add variables to this layout , then setters and getters are generated in the Binding Class
+> //If add variables to this layout , then setters and getters are generated in the Binding Class
 >     <data>
 >      <variable>
 >      name = "user"
 >      type = ".user"
 >      </variable>
 >     </data>
-></LinearLayout>
-></layout>'
+> </LinearLayout>
+> </layout>'
 ---
