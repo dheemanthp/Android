@@ -19,3 +19,10 @@ If you add variables to this layout , then setters and getters are generated in 
 </LinearLayout>
 </layout>'
 ```
+
+# VIEW BINDING NEXT BIG THING
+ ELEGANCE
+ COMPILE TIME SAFETY
+ BUILD SPEED IMPACT
+ COMPATIBLE WITH DATA BINDING
+ 
