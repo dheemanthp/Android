@@ -6,3 +6,4 @@ Please use the below annotations
 @PrimaryKey , example SongID
 @Query -> you can write the actual DataBase queries , example @Query("SELECT * FROM Song)
 ```
+In KOTLIN Using ROOM 2.1 "suspend is supported" , if you want to do a work Asynchronously you will add "Suspend" Keyword
