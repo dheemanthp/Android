@@ -1,3 +1,8 @@
+2019 Latest Jetpack Updates : https://www.youtube.com/watch?v=Qxj2eBmXLHg
+Udacity Course : https://classroom.udacity.com/courses/ud9012
+
+
+
 Followed : To build the APP
 https://www.youtube.com/watch?v=BofWWZE1wts
 https://developer.android.com/jetpack/docs/guide
