@@ -1,5 +1,8 @@
 2019 Latest Jetpack Updates : https://www.youtube.com/watch?v=Qxj2eBmXLHg
+
 Udacity Course : https://classroom.udacity.com/courses/ud9012
+
+Code and Details :https://developer.android.com/topic/libraries/architecture
 
 
 
