@@ -1,7 +1,7 @@
 
 ```
 ## Kotlin : https://www.tutorialspoint.com/kotlin/kotlin_overview.htm
-***Advantages and Disadvantages***
+-- Advantages and Disadvantages
 Following are some of the advantages of using Kotlin for your application development.
 
 Easy Language − Kotlin is a functional language and very easy to learn. The syntax is pretty much similar to Java, hence it is very easy to remember. Kotlin is more expressive, which makes your code more readable and understandable.
