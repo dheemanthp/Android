@@ -7,6 +7,10 @@ fun dummyfunction() {
     println("dheemanth here jumped to func")
 }
 
+fun doubleMe(x: Int):Int {
+   return 2*x;
+}
+
 //Live Demo
 fun main(args: Array<String>) {
    //various data types
@@ -68,6 +72,64 @@ fun main(args: Array<String>) {
    }
    
    //Control Flow
-    
+   //If-else
+   val aa: Int = 2;
+   val bb: Int = 5;
+   val max: Int;
+   if(aa > bb) {
+       max = aa;
+   } else{
+       max = bb;
+   }
+   println(" the value of max is " + max);
+   //use of when
+  val value: Int = 1;
+  when(value) {
+      1 -> println(" value is 1");
+      2 -> println(" value is 2");
+      else -> {
+          println(" value is neither 1 or 2");
+      }
+  }//close when
+  // use of for loop
+  val listchecker: MutableList<Int> = mutableListOf(11,22,33,44)
+  for(i in listchecker) {
+      println(i);
+  }
+  //print the index and value in a given list
+  val items = listOf(1, 22, 83, 4)
+  for ((indexes, v) in items.withIndex()) {
+      println("the element at $indexes is $v")
+  }  
+  //While Loop and Do-While Loop
+  var x: Int = 0;
+  while(x <=10) {
+      println("the loop values are " + x)
+      x++;
+  }
+  //calling a function that returns a value in kotlin
+  println(" calling a function that returns a value in kotlin " + doubleMe(10))
+  
+   
+   //Create a data object
+   class student {
+       
+       
+   }
+   
+   
+   //Exception Handling try, catch , finally
+    try{
+        var num: Int = 2;
+        var str: String = "hi how are you"
+        //try to create an exception here
+        //In the above piece of code, we have declared a String and 
+        //later tied that string into the integer, which is actually a runtime exception.
+        str.toInt();
+    } catch (e:Exception) {
+        e.printStackTrace();
+    } finally{
+        println("Exception handling in finally");
+    }
     
 }
